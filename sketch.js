@@ -32,7 +32,7 @@ function draw() {
   //for(a=0;a<5;a++)//bs.push( new Ball())
   //bs[a] = new Ball();
  //bs.push(new Ball());
-  ballSize = map(vol, 0, 20,0, 200
+  ballSize = map(vol, 0, 15,0, 200
 			)
  
   
