@@ -1,15 +1,16 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/q2IDNkUws-A
+
 
 
 
 var mic;
 var bs=[];
 //var ballSize=50
+var canvas;
 
-	
+function windowResized(){
+	resizeCanvas(window.innerWidth,window.innerHeight);
+	background(0);
+}	
 function setup() {
 	//fft = new p5.FFT();
   canvas = createCanvas(window.innerWidth, window.innerHeight)
@@ -32,7 +33,7 @@ function draw() {
   //for(a=0;a<5;a++)//bs.push( new Ball())
   //bs[a] = new Ball();
  //bs.push(new Ball());
-  ballSize = map(vol, 0, 15,0, 200
+  ballSize = map(vol, 0, 15,0, innerWidth
 			)
  
   
@@ -57,8 +58,8 @@ function Ball(){
  
 
   this.update=function() {
-    this.x= this.x + random(-5, 5);
-    this.y= this.y + random(-5,5);
+    this.x= this.x + random(-3, 3);
+    this.y= this.y + random(-3,3);
 	  this.dx= constrain(this.dx,0,window.innerWidth);
 	  this.dy=constrain(this.dy,0,window.innerHeight);
 
