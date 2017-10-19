@@ -23,7 +23,7 @@ stroke(0);
 function draw() {
 	var vol = mic.getLevel(0.1)
 	ballSize = map(vol, 0, 1, 0, 500)
-	bs.push( new Ball())
+	//bs.push( new Ball())
 		
 	
 	for (a = 0; a < bs.length; a++) {
@@ -44,7 +44,7 @@ function Ball() {
 
 
 	this.update = function () {
-		this.x = this.x ; //+ random(-10,10 );//this.dx //horizontal//this.x + random(-1, 1);//
+		this.x = this.x + random(-10,10 );//this.dx //horizontal//this.x + random(-1, 1);//
 		this.y = this.y + random(-10, 10);
 		this.x= constrain(this.x,0,innerWidth);
 		this.y=constrain(this.y,0,innerHeight);
