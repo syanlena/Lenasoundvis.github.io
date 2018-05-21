@@ -12,8 +12,8 @@ function setup() {
 stroke(0);
 	colorMode(HSB)
 
-	for (a = 0; a < 1; a++) 
-		bs[a] = new Ball();
+	//for (a = 0; a < 1; a++) 
+		//bs[a] = new Ball();
 	mic = new p5.AudioIn();
 	mic.start()
 	//noStroke();
