@@ -16,7 +16,7 @@ stroke(0);
 		//bs[a] = new Ball();
 	mic = new p5.AudioIn();
 	mic.start()
-	//noStroke();
+	noStroke();
 
 }
 
@@ -40,7 +40,7 @@ function Ball() {
 
 	this.dx = this.x//random(width)
 	this.dy = this.dx
-	this.fill = random(0, 360)
+	this.fill = random(0, 180)
 
 
 	this.update = function () {
