@@ -23,7 +23,7 @@ stroke(0);
 function draw() {
 	var vol = mic.getLevel(0.1)
 	ballSize = map(vol, 0, 1, 0, 500)
-	bs.push( new Ball())
+	//bs.push( new Ball())
 		
 	
 	for (a = 0; a < bs.length; a++) {
