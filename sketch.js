@@ -40,7 +40,7 @@ function Ball() {
 
 	this.dx = this.x//random(width)
 	this.dy = this.dx
-	this.fill = random(0, 180)
+	this.fill = random(0, 360)
 
 
 	this.update = function () {
