@@ -8,7 +8,7 @@ function setup() {
 	canvas = createCanvas(window.innerWidth, window.innerHeight);
 	canvas.position(0, 0);
 	canvas.style('z-index', '-1');
-	background(0);
+	background(100,100,100);
 stroke(0);
 	colorMode(HSB)
 
