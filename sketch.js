@@ -1,6 +1,6 @@
 var mic;
 var bs = [];
-//var ballSize=22
+var ballSize=22;
 var canvas;
 
 function setup() {
