@@ -38,7 +38,7 @@ function Ball() {
 	this.x = random(innerWidth)
 	this.y = random(innerHeight)
 
-	this.dx = this.x//random(width)
+	this.dx = random(width)//this.x
 	this.dy = this.dx
 	this.fill = random(0, 360)
 
