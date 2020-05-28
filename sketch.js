@@ -40,11 +40,11 @@ function Ball() {
 
 	this.dx = random(width)//this.x
 	this.dy = this.dx
-	this.fill = random(0, 360)
+	this.fill = random(0, 180)
 
 
 	this.update = function () {
-		this.x = this.x + random(-10,10 );//this.dx //horizontal//this.x + random(-1, 1);//
+		this.x = this.dx;//this.x + random(-10,10 );//this.dx //horizontal//this.x + random(-1, 1);//
 		this.y = this.y + random(-10, 10);
 		this.x= constrain(this.x,0,innerWidth);
 		this.y=constrain(this.y,0,innerHeight);
